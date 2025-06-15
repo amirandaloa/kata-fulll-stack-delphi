@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteRodl>
+	<Server>
+		<Name>xPrototipoAPIServiceLibrary</Name>
+		<ServerUri>http://127.0.0.1:8099/JSON</ServerUri>
+	</Server>
+</RemoteRodl>

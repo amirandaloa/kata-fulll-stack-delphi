@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canal Cafetero & Productos del Banco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="../FrontEndHtmlJsCss/css/app.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <h1>Canal Cafetero & Productos del Banco</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#caficultores">Caficultores</a></li>
+      <li><a href="#abonos">Abonos a Monedero</a></li>
+      <li><a href="#consultar-saldo">Consultar Saldo</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenedor-principal">
+
+    <section id="caficultores">
+      <h2>Caficultores Registrados</h2>
+      <div id="caficultores-table-container">
+        <table id="caficultores-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Identificación</th>
+              <th>Ciudad</th>
+              <th>Tipo de Producto</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+      <button class="boton-secundario" id="btn-cargar-caficultores">Cargar Caficultores</button>
+    </section>
+
+    <section>
+      <h2>Registrar Nuevo Caficultor</h2>
+      <form id="form-registrar-caficultor">
+        <label for="nombre-caficultor">Nombre:</label>
+        <input type="text" id="nombre-caficultor" required>
+
+        <label for="identificacion-caficultor">Identificación:</label>
+        <input type="text" id="identificacion-caficultor" required>
+
+        <label for="ciudad-caficultor">Ciudad:</label>
+        <input type="text" id="ciudad-caficultor" required>
+
+        <label for="tipo-producto-caficultor">Tipo de Producto:</label>
+        <select id="tipo-producto-caficultor" required>
+          <option value="">Seleccione...</option>
+          <option value="Ahorros">Ahorros</option>
+          <option value="Corriente">Corriente</option>
+          <option value="Débito">Débito</option>
+        </select>
+
+        <button type="submit">Registrar Caficultor</button>
+      </form>
+    </section>
+
+    <section id="abonos">
+      <h2>Abonos Realizados al Monedero</h2>
+      <div id="abonos-table-container">
+        <table id="abonos-table">
+          <thead>
+            <tr>
+              <th>ID Abono</th>
+              <th>ID Caficultor</th>
+              <th>Valor</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <button class="boton-secundario" id="btn-cargar-abonos">Cargar Abonos</button>
+    </section>
+
+    <section>
+      <h2>Registrar Abono a Monedero</h2>
+      <form id="form-registrar-abono">
+        <label for="id-caficultor-abono">ID Caficultor:</label>
+        <input type="number" id="id-caficultor-abono" required>
+
+        <label for="monto-abono">Monto:</label>
+        <input type="number" id="monto-abono" step="0.01" required>
+
+        <button type="submit">Registrar Abono</button>
+      </form>
+    </section>
+
+    <section id="consultar-saldo">
+      <h2>Consultar Saldo del Monedero</h2>
+      <form id="form-consultar-saldo">
+        <label for="id-caficultor-saldo">ID Caficultor:</label>
+        <input type="text" id="id-caficultor-saldo" required>
+        <button type="submit">Consultar Saldo</button>
+      </form>
+      <p>Saldo del Monedero: <span id="saldo-monedero"></span></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Canal Cafetero</p>
+  </footer>
+
+  <script src="../FrontEndHtmlJsCss/js/app.js"></script>
+
+</body>
+</html>

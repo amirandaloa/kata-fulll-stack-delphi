@@ -1,0 +1,70 @@
+# === Delphi / RAD Studio ===
+__history/
+*.dcu
+*.~*
+*.identcache
+*.local
+*.class
+*.exe
+*.dll
+*.tds
+*.map
+*.drc
+*.bpl
+*.dcp
+*.dsk
+*.cfg
+*.log
+*.tmp
+*.stat
+*.bak
+*.otares
+*.tvsconfig
+*.dproj.local
+*.ipj
+
+# IDE-generated folders
+*.tvsconfig
+*.vssettings
+*.groupproj
+*.dproj
+*.dof
+*.bdsproj
+*.dsproj
+*.bpg
+
+# Backup and autosave files
+*.~*
+*.bak
+*.old
+*.orig
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# === Web (HTML, CSS, JS) ===
+# Node dependencies (if using Node.js tooling)
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Build output (if using tools like Webpack, Vite, etc.)
+dist/
+build/
+
+# Environment and config
+.env
+.env.local
+.env.*.local
+
+# IDE/editor-specific
+.vscode/
+.idea/
+*.code-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
