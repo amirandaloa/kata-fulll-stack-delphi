@@ -69,7 +69,7 @@ object ServerDataModule: TServerDataModule
     Connected = True
     ConnectionString = 
       'Provider=SQLNCLI11.1;Persist Security Info=False;User ID=sa;Init' +
-      'ial Catalog=KATA_FULLSTACK_DELPHI;password=sa2024*;Data Source=D' +
+      'ial Catalog=KATA_FULLSTACK_DELPHI;password=*;Data Source=D' +
       'ESKTOP-O4N1EHA\SQLEXPRESS;Use Procedure for Prepare=1;Auto Trans' +
       'late=True;Packet Size=4096;Workstation ID=DESKTOP-O4N1EHA;Initia' +
       'l File Name="";Use Encryption for Data=False;Tag with column col' +
