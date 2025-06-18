@@ -44,7 +44,7 @@ object ServerDataModule: TServerDataModule
     Params.Strings = (
       'DriverID=MSSQL'
       'Database=KATA_FULLSTACK_DELPHI'
-      'Password=sa2024*'
+      '****'
       'User_Name=sa'
       'Server=DESKTOP-O4N1EHA\SQLEXPRESS')
     LoginPrompt = False
